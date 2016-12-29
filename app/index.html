@@ -9,6 +9,7 @@
 
     <title>Title</title>
 
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/index.css">
 
 </head>
@@ -16,6 +17,45 @@
 
     <!-- site -->
     <div class="site">
+
+        <!-- site__header -->
+        <div class="site__header">
+
+            <!-- site__header-layout -->
+            <div class="site__header-layout">
+
+                <!-- logo -->
+                <h1 class="logo">
+                    <svg viewBox="0 0 142 38">
+                        <image xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                </h1>
+                <!-- /logo -->
+
+                <!-- call-back -->
+                <div class="call-back">
+                    <a href="tel:+74953767676" class="call-back__phone">+7 (495) 376-76-76</a>
+                    <a href="#" class="btn btn_1">РЕГИСТРАЦИЯ</a>
+                </div>
+                <!-- /call-back -->
+
+                <!-- menu -->
+                <nav class="menu">
+
+                    <a href="#" class="menu__item">О проекте</a>
+                    <a href="#" class="menu__item">Возможности платформы</a>
+                    <a href="#" class="menu__item">Сотрудничество</a>
+                    <a href="#" class="menu__item">Партнеры</a>
+                    <a href="#" class="menu__item">Контакты</a>
+
+                </nav>
+                <!-- /menu -->
+
+            </div>
+            <!-- /site__header-layout -->
+
+        </div>
+        <!-- /site__header -->
 
       <!-- site__footer -->
       <div class="site__footer">
@@ -73,6 +113,7 @@
 
 
     <script src="js/vendors/jquery-2.2.1.min.js"></script>
+    <script src="js/vendors/swiper.jquery.min.js"></script>
     <script src="js/index.min.js"></script>
 </body>
 </html>

@@ -1,12 +1,15 @@
 .site {
-	position: relative;
+  position: relative;
   min-width: 980px;
-  @include Roboto;
   min-height: 100vh;
+  @include Roboto;
   padding-bottom: 160px;
 
   &__header{
-
+	position: relative;
+	width: 980px;
+	height: 160px;
+	margin: 0 auto;
   }
 
   &__footer{
