@@ -111,7 +111,7 @@
 
                 var windowH = _window.height(),
 
-                    topPos = _news.offset().top-5;
+                    topPos = _news.offset().top-windowH+60;
 
                 if( _window.scrollTop() > topPos ){
                     
