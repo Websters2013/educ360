@@ -81,6 +81,14 @@
   	}
   }
 
+	&__title{
+		margin-bottom: 32px;
+		width: 100%;
+		font-size: 28px;
+		text-align:center;
+		text-transform: uppercase;
+	}
+
   &__footer-menu {
     display: inline-block;
   	position: relative;
