@@ -1,0 +1,38 @@
+.menu {
+  position: absolute;
+  top: 121px;
+  width: 100%;
+  text-align: center;
+
+  &__item{
+	position: relative;
+	margin: 0 20px;
+	color: #178fe6;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: color .3s ease;
+	-webkit-transition: color .3s ease;
+
+	&:hover, &.active{
+	  color: #ff4c5b;
+	}
+
+	&:after{
+	  position: absolute;
+	  top: -9px;
+	  left: -22px;
+	  height: 32px;
+	  border-left: 1px solid #c1e1f8;
+	  transform: rotate(25deg);
+	  -webkit-transform: rotate(24deg);
+	  content: '';
+	}
+
+	&:first-child:after{
+	  display: none;
+	}
+
+  }
+
+}

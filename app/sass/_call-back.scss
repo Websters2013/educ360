@@ -1,0 +1,28 @@
+.call-back{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 44px;
+  background-color: #fff;
+
+  &__phone{
+    position: relative;
+    margin: 0 41px 2px 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+
+    svg{
+      position: absolute;
+      top: 1px;
+      left: -24px;
+      width: 18px;
+      height: 18px;
+    }
+
+  }
+
+}

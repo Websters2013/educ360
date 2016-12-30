@@ -1,0 +1,22 @@
+.logo{
+  position: absolute;
+  top: 32px;
+  left: -1px;
+
+  svg{
+    width: 142px;
+    height: 38px;
+  }
+
+  &:after{
+    position: absolute;
+    left: 100%;
+    top: 19px;
+    margin-left: 18px;
+    height: 1px;
+    width: 1000%;
+    background-color: #000;
+    content: '';
+  }
+
+}
