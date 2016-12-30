@@ -1,0 +1,19 @@
+.platform{
+  display: flex;
+  flex-flow: row wrap;
+  width: 980px;
+  margin: 0 auto;
+  padding: 76px 0 63px;
+}
+.platform__item{
+  width: 25%;
+  text-align:center;
+  font-size: 22px;
+  font-weight: 400;
+}
+.platform__number{
+   margin-bottom: 10px;
+   font-size: 100px;
+   font-weight: 300;
+   color: $color-number;
+}
