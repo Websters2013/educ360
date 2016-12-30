@@ -1,7 +1,44 @@
-.menu {
+.btn {
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+  padding: 0 58px 1px;
+  border: none;
+  border-radius: 3px;
+  color: $btn-color;
+  @include Roboto;
+  font-size: 14px;
+  transition: background-color .3s ease;
+  -webkit-transition: background-color .3s ease;
 
-  &__item{
-    color: #178fe6;
+  span{
+    width: 100%;
+    text-align: center;
+  }
+
+  svg{
+    position: relative;
+    top: -1px;
+    fill: #fff;
+    width: 13px;
+    height: 12px;
+    vertical-align: middle;
+  }
+
+  &_1{
+    background-color: $btn-back-1;
+
+    &:hover {
+      background-color: $btn-back-hover-1;
+    }
+
+    &:active{
+      background-color: $btn-back-active-1;
+    }
+
   }
 
 }
