@@ -1,16 +1,18 @@
 .btn {
-  display: flex;
-  text-align: left;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  @include inline-flex();
+  @include flex-direction(row);
+  @include align-items(center);
+  @include justify-content(center);
   height: 43px;
   padding: 0 58px 1px;
   border: none;
   border-radius: 3px;
   color: $btn-color;
-  @include Roboto;
+  @include Roboto();
   font-size: 14px;
+  line-height: 14px;
+  text-align: center;
   transition: background-color .3s ease;
   -webkit-transition: background-color .3s ease;
 
@@ -40,5 +42,19 @@
     }
 
   }
+  &_2{
+    height: 36px;
+    padding: 0 20px;
+    font-weight: 500;
+    background-color: #178fe6;
 
+    &:hover {
+      background-color: #1678c6;
+    }
+
+    &:active{
+      background-color: #19a0ff;
+    }
+
+  }
 }
