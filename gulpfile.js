@@ -20,6 +20,7 @@ var paths = {
         {
             dist: 'index.min.js',
             contains: [
+                'app/js/jquery.animation.js',
                 'app/js/jquery.index.js'
             ]
         },
