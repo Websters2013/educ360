@@ -45,12 +45,9 @@
     },
     _scrollToTop = function () {
 
-      _html.animate({
-                 			scrollTop: 0
-             				}, 400);
+      _html.animate({scrollTop: 0}, 400);
 
-    }
-
+    };
 
     _constructor ();
 
@@ -74,6 +71,7 @@
                 _swiper = new Swiper( _obj, {
                     loop: true,
                     pagination: '.swiper-pagination',
+                    paginationClicable: true,
                     autoplay: 5000,
                     speed: 600,
                     autoplayDisableOnInteraction: false
