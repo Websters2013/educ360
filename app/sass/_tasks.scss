@@ -62,7 +62,18 @@
   top: 107px;
   right: 9px;
 }
-
+.tasks__wrap .tasks__item:nth-child(1) .tasks__animation{
+  animation-delay: 0s;
+}
+.tasks__wrap .tasks__item:nth-child(2) .tasks__animation{
+  animation-delay: .15s;
+}
+.tasks__wrap .tasks__item:nth-child(3) .tasks__animation{
+  animation-delay: .3s;
+}
+.tasks__wrap .tasks__item:nth-child(4) .tasks__animation{
+  animation-delay: .45s;
+}
 .tasks__wrap.animation .tasks__animation{
   animation: myOrbit .8s ease-out;
   animation-fill-mode: forwards;
