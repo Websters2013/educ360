@@ -8,9 +8,13 @@
     clip: rect(0, 0, 0, 0);
 
     &:checked + label {
+      color: #969696;
 
       &:before {
         display: block;
+      }
+      &:after {
+        border-color: #969696;
       }
 
     }
@@ -24,13 +28,11 @@
   label {
     position: relative;
     display: flex;
-    text-align: left;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    padding-left: 25px;
-    color: $nice-checkbox-color;
+    font-size: 14px;
+    line-height: 17px;
+    color: #b2b2b2;
+    min-height: 20px;
+    padding: 2px 0 0 29px;
     cursor: pointer;
 
     &:after,
@@ -42,19 +44,18 @@
     &:after {
       top: 0;
       left: 0;
-      width: 15px;
-      height: 15px;
-      border: 2px solid $nice-checkbox-after-color;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #d9d9d9;
     }
 
     &:before {
       display: none;
       top: 7px;
       left: 7px;
-      border-radius: 50%;
-      background: $nice-checkbox-after-color;
-      width: 5px;
-      height: 5px;
+      background: #969696;
+      width: 6px;
+      height: 6px;
       content: '';
     }
 

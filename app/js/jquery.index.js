@@ -10,6 +10,12 @@
 
     } );
 
+      $.each( $( '.promo__swiper' ), function() {
+
+          new PromoGallery ( $( this ) );
+
+      } );
+
   } );
 
 
@@ -48,6 +54,39 @@
 
     _constructor ();
 
-  }
+  };
+
+    var PromoGallery = function( obj ) {
+
+        //private properties
+        var _self = this,
+            _obj = obj,
+            _swiper;
+
+        //private methods
+        var _addEvents = function() {
+
+
+
+            },
+            _initSwiper = function() {
+
+                _swiper = new Swiper( _obj, {
+                    loop: true,
+                    pagination: '.swiper-pagination',
+                    autoplay: 5000,
+                    speed: 600,
+                    autoplayDisableOnInteraction: false
+                });
+
+            },
+            _init = function() {
+                _obj[ 0 ].obj = _self;
+                _addEvents();
+                _initSwiper();
+            };
+
+        _init();
+    };
 
 } ) ();
