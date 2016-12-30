@@ -9,6 +9,14 @@
 
     });
 
+    $( function() {
+
+        $.each( $( '.news' ), function() {
+            new Anim ( $( this ) );
+        } );
+
+    });
+
     var Slides = function ( obj ) {
 
         //private properties
@@ -81,4 +89,46 @@
         _init();
     };
 
+    var Anim = function ( obj ) {
+
+        //private properties
+        var _self = this,
+            _news = obj,
+            _item = _news.find( '.news__item' ),
+            _window = $( window );
+
+        //private methods
+        var _onEvents = function () {
+                _window.on({
+                    scroll: function () {
+
+                        _checkScroll();
+
+                    }
+                });
+            },
+            _checkScroll = function(){
+
+                var windowH = _window.height(),
+
+                    topPos = _news.offset().top;
+
+                if( _window.scrollTop() > topPos ){
+                    
+                    _item.addClass('animation');
+
+                }
+
+            },
+            _init = function () {
+                _onEvents();
+                _checkScroll();
+            };
+
+        //public properties
+
+        //public methods
+
+        _init();
+    };
 } )();

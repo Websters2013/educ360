@@ -33,8 +33,10 @@ $btn-2-color-active: #f0a;
 /*---------- /btn ---------*/
 
 /*-------- site -----------*/
+$color-blue: #178fe6;
+
 $color-bg-footer: #4c5865;
-$color-bg-scroll: #178fe6;
+$color-bg-scroll: $color-blue;
 $color-bg-scroll-hover: #339dea;
 $color-symbol-scroll: #fff;
 $color-footer-links: #949ba3;
@@ -51,6 +53,10 @@ $color-title-news: #000;
 $color-title-news-hover: $color-bg-scroll;
 $color-text-hover: #000;
 /*-------- /news ----------*/
+
+/*-------- system -----------*/
+$color-title-system: #fff;
+/*-------- /system ----------*/
 
 /*-------- platform ----------*/
 $color-number: #ff4c5b;
