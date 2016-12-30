@@ -1,0 +1,85 @@
+
+.progress {
+
+	&__wrap {
+		width: 1010px;
+		padding: 67px 15px 65px;
+		margin: 0 auto;
+
+		.site__title {
+			white-space: pre-line;
+			text-align: left;
+		}
+	}
+	&__list {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 754px;
+			height: 240.5px;
+			background: url(../img/graph-line.png) no-repeat;
+			background-size: 754px 240.5px;
+			content: '';
+			-webkit-transition: width .3s linear;
+			transition: width .3s linear;
+		}
+	}
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		width: 222px;
+
+		p {
+			position: relative;
+			font-size: 14px;
+			line-height: 22px;
+			color: #999;
+
+			&:after {
+				position: absolute;
+				width: 1px;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				background: #ff4c5b;
+				content: '';
+			}
+		}
+		&:first-child {
+
+			.progress__item-title:before {
+				border-color: #178fe6;
+			}
+			p:after {
+				background: #178fe6;
+			}
+		}
+	}
+	&__item-title {
+		position: relative;
+		color: #000;
+
+		h3 {
+			font-size: 22px;
+			font-weight: 700;
+		}
+		span {
+			font-size: 14px;
+			line-height: 18px;
+		}
+		&:before {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 13px;
+			height: 13px;
+			border-radius: 50%;
+			border: 4px solid #ff4c5b;
+			background: #fff;
+			content: '';
+		}
+	}
+}
