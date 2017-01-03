@@ -42,11 +42,12 @@
     }
 
   }
+
   &_2{
-    height: 36px;
+    height: 42px;
     padding: 0 20px;
     font-weight: 500;
-    background-color: $btn-back-1;;
+    background-color: $btn-back-1;
 
     &:hover {
       background-color: $btn-back-hover-1;
@@ -57,4 +58,33 @@
     }
 
   }
+
+  &_3{
+    height: 36px;
+    padding: 0 20px;
+    font-weight: 500;
+    background-color: #178fe6;
+
+    &:hover {
+      background-color: #339dea;
+    }
+
+    &:active{
+      background-color: #1c84cf;
+    }
+  }
+
+  &_4{
+    padding: 0 75px 1px;
+    background-color: #178fe6;
+
+    &:hover {
+      background-color: #339dea;
+    }
+
+    &:active{
+      background-color: #1c84cf;
+    }
+  }
+
 }

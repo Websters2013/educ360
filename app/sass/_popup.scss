@@ -28,23 +28,82 @@
   &__wrap {
     position: relative;
     z-index: 2;
-    width: 527px;
+    width: 520px;
     margin: 0 auto;
     padding-bottom: 40px;
   }
 
   &__content {
     display: none;
-    text-align: left;
-    padding: 20px 0;
+    padding: 49px 40px 59px 43px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #999;
+    @include Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+
+    h2{
+      margin-bottom: 23px;
+      color: #000;
+      font-size: 28px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    form{
+      padding-top: 40px;
+    }
+
+    label{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+
+      span{
+        width: 98px;
+        order: 1;
+        font-size: 12px;
+        text-align: right;
+        transition: color .3s ease;
+        -webkit-transition: color .3s ease;
+      }
+
+      input{
+        order: 2;
+        height: 40px;
+        width: 314px;
+        border: none;
+        border-bottom: 1px solid #e2e2e2;
+        transition: border-bottom-color .3s ease;
+        -webkit-transition: border-bottom-color .3s ease;
+
+        &:focus{
+          border-bottom-color: #000
+        }
+
+        &:focus + span{
+          color: #000;
+        }
+
+      }
+
+    }
+
+  }
+
+  &__btn-wrap{
+    padding-top: 63px;
   }
 
   &__close {
     position: absolute;
-    top: 17px;
-    width: 15px;
-    height: 15px;
-    right: 18px;
+    top: 14px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
     text-indent: -5000px;
     cursor: pointer;
 
@@ -54,25 +113,31 @@
       top: 50%;
       left: 0;
       right: 0;
-      height: 3px;
-      background: $popup-close-back;
+      height: 2px;
+      background-color: $popup-close-back;
       transform-origin: center;
+      transition: background-color .3s ease;
+      -webkit-transition: background-color .3s ease;
       content: '';
     }
+
     &:after{
       transform: translateY( 50% ) rotate( 45deg );
     }
+
     &:before {
       transform: translateY( 50% ) rotate( -45deg );
     }
 
-    &:hover {
-      opacity: 0.8;
+    &:hover:after,
+    &:hover:before  {
+      background-color: #000;
     }
 
     &:active {
       background-position: 0 bottom;
     }
+
   }
 
   &__scrollbar-measure {
